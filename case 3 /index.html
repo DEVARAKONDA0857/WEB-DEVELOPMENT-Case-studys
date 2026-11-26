@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Eligibility Checker</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 30px auto;
+            width: 350px;
+            border-radius: 10px;
+        }
+        input {
+            padding: 8px;
+            margin: 7px;
+            width: 80%;
+        }
+        button {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Exam Eligibility Checker</h2>
+
+    <input type="text" id="name" placeholder="Student Name"><br>
+    <input type="text" id="roll" placeholder="Roll Number"><br>
+    <input type="number" id="attendance" placeholder="Attendance %"><br>
+    <input type="number" id="m1" placeholder="Minor 1 Marks"><br>
+    <input type="number" id="m2" placeholder="Minor 2 Marks"><br>
+    <input type="number" id="end" placeholder="Endterm Marks"><br>
+
+    <button onclick="checkEligibility()">Check Eligibility</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    let students = [];
+
+    function checkEligibility() {
+        let name = document.getElementById("name").value;
+        let roll = document.getElementById("roll").value;
+        let attendance = Number(document.getElementById("attendance").value);
+        let m1 = Number(document.getElementById("m1").value);
+        let m2 = Number(document.getElementById("m2").value);
+        let end = Number(document.getElementById("end").value);
+
+        if (name == "" || roll == "" ||
+            document.getElementById("attendance").value == "" ||
+            document.getElementById("m1").value == "" ||
+            document.getElementById("m2").value == "" ||
+            document.getElementById("end").value == "") {
+            alert("Please enter all details");
+            return;
+        }
+
+        let student = {
+            name: name,
+            roll: roll,
+            attendance: attendance,
+            m1: m1,
+            m2: m2,
+            end: end
+        };
+
+        students.push(student);
+
+        let output = "";
+
+        for (let i = 0; i < students.length; i++) {
+            let s = students[i];
+
+            output += "<h3>" + s.name + "</h3>";
+            output += "Roll Number: " + s.roll + "<br>";
+
+            if (s.attendance >= 75) {
+                output += "Attendance: Eligible<br>";
+            } else {
+                output += "Attendance: Not Eligible<br>";
+            }
+
+            output += "Minor 1: " +
+                (s.attendance >= 75 && s.m1 >= 40 ? "Eligible" : "Not Eligible") + "<br>";
+
+            output += "Minor 2: " +
+                (s.attendance >= 75 && s.m2 >= 40 ? "Eligible" : "Not Eligible") + "<br>";
+
+            output += "Endterm: " +
+                (s.attendance >= 75 && s.end >= 40 ? "Eligible" : "Not Eligible");
+        }
+
+        document.getElementById("result").innerHTML = output;
+    }
+</script>
+
+</body>
+</html>
