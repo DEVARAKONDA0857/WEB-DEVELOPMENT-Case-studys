@@ -1,53 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Development Case Studies</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: "Segoe UI", Arial, sans-serif; background: #f4f6fb; color: #222; min-height: 100vh; display: flex; flex-direction: column; }
-    header { background: #1e2a78; color: #fff; text-align: center; padding: 40px 20px; }
-    header h1 { font-size: 2rem; margin-bottom: 8px; }
-    main { flex: 1; max-width: 1000px; margin: 40px auto; padding: 0 20px; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: #fff; border-radius: 10px; padding: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-decoration: none; color: inherit; transition: transform 0.2s; }
-    .card:hover { transform: translateY(-5px); }
-    .card h2 { color: #1e2a78; margin-bottom: 10px; }
-    .card span { color: #1e2a78; font-weight: 600; }
-    footer { text-align: center; padding: 20px; background: #1e2a78; color: #fff; }
-  </style>
+    <title>Web Development Case Studies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f5f9;
+            margin: 0;
+        }
+
+        header {
+            background: #123b70;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        section {
+            background: white;
+            margin: 25px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #123b70;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            margin: 8px;
+            width: 90%;
+        }
+
+        button {
+            background: #123b70;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .card {
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Web Development Case Studies</h1>
-    <p>Click on any case study to view it</p>
-  </header>
+<header>
+    <h1>Malla Reddy University</h1>
+    <h2 style="color:white;">Web Development Case Studies</h2>
+    <p>Student Project</p>
+</header>
 
-  <main>
-    <a class="card" href="case%201/index.html">
-      <h2>Case 1</h2>
-      <span>View Case &rarr;</span>
-    </a>
-    <a class="card" href="case%202/index.html">
-      <h2>Case 2</h2>
-      <span>View Case &rarr;</span>
-    </a>
-    <a class="card" href="case%203/index.html">
-      <h2>Case 3</h2>
-      <span>View Case &rarr;</span>
-    </a>
-    <a class="card" href="case%204/index.html">
-      <h2>Case 4</h2>
-      <span>View Case &rarr;</span>
-    </a>
-    <a class="card" href="case%205/index.html">
-      <h2>Case 5</h2>
-      <span>View Case &rarr;</span>
-    </a>
-  </main>
+<nav>
+    <a href="#case1">Case 1</a>
+    <a href="#case2">Case 2</a>
+    <a href="#case3">Case 3</a>
+    <a href="#case4">Case 4</a>
+    <a href="#case5">Case 5</a>
+</nav>
 
-  <footer>&copy; 2026 DEVARAKONDA0857 &middot; Web Development Case Studies</footer>
+<!-- CASE STUDY 1 -->
+
+<section id="case1">
+
+    <h2>Case Study 1: Student Helpdesk Portal</h2>
+
+    <h3>Welcome Students</h3>
+    <p>Welcome to Malla Reddy University Student Helpdesk Portal.</p>
+
+    <h3>Latest Announcements</h3>
+    <ul>
+        <li>College reopens on Monday.</li>
+        <li>Technical workshop registration started.</li>
+        <li>Assignment submission dates announced.</li>
+    </ul>
+
+    <h3>Examination Updates</h3>
+    <ul>
+        <li>Minor-1 examination timetable.</li>
+        <li>Minor-2 examination updates.</li>
+        <li>End-term examination notifications.</li>
+    </ul>
+
+    <h3>Student Enquiry Form</h3>
+
+    <form>
+        <input type="text" placeholder="Enter Name" required>
+        <input type="email" placeholder="Enter Email" required>
+        <textarea placeholder="Enter your Query"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+</section>
+
+<!-- CASE STUDY 2 -->
+
+<section id="case2">
+
+    <h2>Case Study 2: Student Services Homepage</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h3>Library</h3>
+                <p>Access books and study materials.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h3>Transport</h3>
+                <p>Get college bus information.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h3>Hostel</h3>
+                <p>View hostel facilities.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h3>Placements</h3>
+                <p>Get internship updates.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h3>Examinations</h3>
+                <p>Check examination schedules.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CASE STUDY 3 -->
+
+<section id="case3">
+
+    <h2>Case Study 3: Exam Eligibility Checker</h2>
+
+    <form onsubmit="checkEligibility(event)">
+
+        <input type="text" placeholder="Student Name" required>
+
+        <input type="number" id="attendance"
+        placeholder="Attendance Percentage" min="0" max="100" required>
+
+        <input type="number" id="marks"
+        placeholder="Enter Marks" min="0" max="100" required>
+
+        <button type="submit">Check Eligibility</button>
+
+    </form>
+
+    <h3 id="result"></h3>
+
+</section>
+
+<!-- CASE STUDY 4 -->
+
+<section id="case4">
+
+    <h2>Case Study 4: Student Service Request Form</h2>
+
+    <form onsubmit="submitRequest(event)">
+
+        <input type="text" placeholder="Student Name" required>
+
+        <input type="text" placeholder="Roll Number" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <select id="service" required>
+            <option value="">Select Service</option>
+            <option>Leave Request</option>
+            <option>Bonafide Certificate</option>
+            <option>Course Registration</option>
+        </select>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+
+    <h3 id="message"></h3>
+
+</section>
+
+<!-- CASE STUDY 5 -->
+
+<section id="case5">
+
+    <h2>Case Study 5: Student Dashboard</h2>
+
+    <h3>Welcome, Student!</h3>
+    <p>Malla Reddy University</p>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h4>Attendance</h4>
+                <h2>85%</h2>
+                <button>View</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h4>Timetable</h4>
+                <p>Check class schedule.</p>
+                <button>View</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h4>Notifications</h4>
+                <p>Latest announcements.</p>
+                <button>View</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h4>Fee Reminder</h4>
+                <p>Check fee details.</p>
+                <button>View</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h4>Examinations</h4>
+                <p>Check exam updates.</p>
+                <button>View</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <h4>Student Services</h4>
+                <p>Access university services.</p>
+                <button>View</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h3>Weekly Timetable</h3>
+
+    <table class="table table-bordered table-striped">
+
+        <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>Python</td>
+            <td>9 AM</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>Mathematics</td>
+            <td>10 AM</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>Cyber Security</td>
+            <td>11 AM</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td>Web Development</td>
+            <td>9 AM</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>English</td>
+            <td>10 AM</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    <p>© 2026 Malla Reddy University</p>
+    <p>Web Development Case Studies 1 to 5</p>
+</footer>
+
+<script>
+
+function checkEligibility(event) {
+
+    event.preventDefault();
+
+    var a = Number(document.getElementById("attendance").value);
+    var m = Number(document.getElementById("marks").value);
+
+    if (a >= 75 && m >= 40) {
+        document.getElementById("result").innerHTML =
+        "Eligible for Examination";
+    }
+    else {
+        document.getElementById("result").innerHTML =
+        "Not Eligible for Examination";
+    }
+}
+
+function submitRequest(event) {
+
+    event.preventDefault();
+
+    var s = document.getElementById("service").value;
+
+    document.getElementById("message").innerHTML =
+    s + " submitted successfully!";
+}
+
+</script>
 
 </body>
 </html>
