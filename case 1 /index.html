@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Helpdesk Portal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f5fa;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        input, textarea, select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background: navy;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        footer {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MALLA REDDY UNIVERSITY</h1>
+    <h3>Student Helpdesk & Circular Portal</h3>
+    <p>Your Information, Your Campus</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#notices">Notices</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="home">
+    <h2>Welcome Students!</h2>
+    <p>
+        Welcome to Malla Reddy University Student Helpdesk.
+        Get the latest academic updates, examination details
+        and campus announcements here.
+    </p>
+
+    <img src="https://placehold.co/400x180?text=Malla+Reddy+University"
+         alt="University Image">
+</section>
+
+<section id="notices">
+    <h2>Latest Notices & Announcements</h2>
+
+    <ul>
+        <li>Minor-1 Examination Notification</li>
+        <li>Minor-2 Examination Time Table</li>
+        <li>Endterm Examination Updates</li>
+        <li>Upcoming Campus Events</li>
+    </ul>
+</section>
+
+<section id="resources">
+    <h2>Important Links & Resources</h2>
+
+    <ul>
+        <li><a href="https://www.mallareddyuniversity.ac.in/">
+            University Website</a></li>
+
+        <li><a href="#">Academic Circulars</a></li>
+
+        <li><a href="#">Examination Timetable</a></li>
+
+        <li><a href="#">Student Notes</a></li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Student Enquiry Form</h2>
+
+    <form onsubmit="alert('Your enquiry submitted successfully!'); return false;">
+
+        <label>Student Name:</label><br>
+        <input type="text" placeholder="Enter your name" required><br>
+
+        <label>Roll Number:</label><br>
+        <input type="text" placeholder="Enter roll number" required><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter email" required><br>
+
+        <label>Select Enquiry:</label><br>
+        <select required>
+            <option value="">Select an option</option>
+            <option>Examination</option>
+            <option>Academic Circulars</option>
+            <option>Campus Information</option>
+            <option>Other</option>
+        </select><br>
+
+        <label>Message:</label><br>
+        <textarea placeholder="Enter your enquiry" required></textarea><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</section>
+
+<section>
+    <h2>Contact Information</h2>
+    <p>Email: info@mallareddyuniversity.ac.in</p>
+    <p>Location: Hyderabad, Telangana</p>
+    <p>Website: www.mallareddyuniversity.ac.in</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Malla Reddy University</p>
+    <p>Student Helpdesk & Circular Portal</p>
+</footer>
+
+</body>
+</html>
