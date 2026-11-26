@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f2f5fa;
+        }
+
+        .header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            margin: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">MRU Student Portal</a>
+        <span class="text-white">Student Dashboard</span>
+    </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+    <h1>MALLA REDDY UNIVERSITY</h1>
+    <h3>Student Dashboard</h3>
+    <p>Welcome to Your Student Portal</p>
+</div>
+
+<div class="container mt-4">
+
+    <!-- Notifications -->
+    <div class="alert alert-info">
+        Welcome Students! Check your latest academic updates.
+    </div>
+
+    <!-- Cards -->
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h4>Attendance</h4>
+                <h2 class="text-success">85%</h2>
+                <p>Your attendance percentage</p>
+                <button class="btn btn-primary"
+                onclick="alert('Attendance Details: 85%')">
+                    View Details
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h4>Timetable</h4>
+                <p>View your daily class schedule.</p>
+                <button class="btn btn-primary"
+                onclick="alert('Timetable: 9 AM to 4 PM')">
+                    View Timetable
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h4>Fee Reminder</h4>
+                <p>Check your fee payment details.</p>
+                <button class="btn btn-primary"
+                onclick="alert('Please check your fee details')">
+                    View Fees
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h4>Examinations</h4>
+                <p>Check examination schedules.</p>
+                <button class="btn btn-primary"
+                onclick="alert('Endterm Examination Updates')">
+                    View Exams
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h4>Notifications</h4>
+                <p>View academic announcements.</p>
+                <button class="btn btn-primary"
+                onclick="alert('No new notifications')">
+                    View Updates
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 text-center">
+                <h4>Student Services</h4>
+                <p>Access library and other services.</p>
+                <button class="btn btn-primary"
+                onclick="alert('Student Services Opened')">
+                    Explore
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Timetable Table -->
+    <h3 class="mt-4">Class Timetable</h3>
+
+    <table class="table table-bordered table-striped">
+        <tr class="table-primary">
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>Python</td>
+            <td>9 AM</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>Mathematics</td>
+            <td>10 AM</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>English</td>
+            <td>11 AM</td>
+        </tr>
+    </table>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Malla Reddy University</p>
+    <p>Student Dashboard</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
